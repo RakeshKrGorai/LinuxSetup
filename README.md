@@ -1,2 +1,2 @@
 # LinuxSetup
-This repository will contain My Arch setup files
+This repository contains My Arch setup files
