@@ -100,7 +100,15 @@ static const Key keys[] = {
 	TAGKEYS(                        XK_9,                      8)
 	{0,								XF86XK_AudioRaiseVolume,	spawn,	SHCMD("~/.local/bin/volume incr")},
 	{0,								XF86XK_AudioLowerVolume,	spawn,	SHCMD("~/.local/bin/volume decr")},
-	{0,								XF86XK_AudioMute,			spawn,	SHCMD("~/.local/bin/volume tmute")},
+	{0,								XF86XK_AudioMute,		spawn,	SHCMD("~/.local/bin/volume tmute")},
+	{0,								XK_F5,				spawn,	SHCMD("~/.local/bin/shine incr")},
+	{0,								XK_F4,				spawn,	SHCMD("~/.local/bin/shine decr")},
+	{0,								XK_F1,   		        spawn,	SHCMD("~/.local/bin/volume tmute")},
+	{0,								XK_F3,   		        spawn,	SHCMD("~/.local/bin/volume incr")},
+	{0,								XK_F2,   		        spawn,	SHCMD("~/.local/bin/volume decr")},
+	{0,								XF86XK_MonBrightnessUp,  	spawn,	SHCMD("~/.local/bin/shine incr")},
+	{0,								XF86XK_MonBrightnessDown, 	spawn,	SHCMD("~/.local/bin/shine decr")},
+	{ MODKEY,							XK_v,				spawn,	SHCMD("copyq menu")},
 	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },
 	{ MODKEY,						XK_r,      quit,           {1} }, 
 };
